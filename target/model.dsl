@@ -13,8 +13,13 @@ group "Big Bank plc" {
     atm -> mainframe "Uses"
     customer -> atm "Withdraws cash using"
 
+<<<<<<< Updated upstream
     internetBankingSystem = softwaresystem "Internet Banking System" "Allows customers to view information about their bank accounts, and make payments." {
         !include internet-banking-system/ibs.dsl
+=======
+    internetBankingSystem = softwaresystem "School Accounting DB" "Contains all information about finaces" {
+        !include show-me-the-money/ibs.dsl
+>>>>>>> Stashed changes
     }
     internetBankingSystem -> mainframe "Gets account information from, and makes payments using"   
     customer -> internetBankingSystem "Views account balances and makes payments using"

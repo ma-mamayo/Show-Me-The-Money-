@@ -9,7 +9,7 @@ Modular monolithic desktop application to ensure low latency and high performanc
 
 **Technology Stack**
 
-JavaFX or .NET for UI; SQLite or PostgreSQL for database management; local network for communication.
+JavaFX;PostgreSQL for database management; local network for communication.
 
 **Deployment Strategy**
 

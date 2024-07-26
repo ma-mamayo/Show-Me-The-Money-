@@ -5,7 +5,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 
 == Deployment View
 
-=== Infrastructure Level 1
+=== Infrastructure
 
 ==== Development
 
@@ -19,13 +19,13 @@ Mirror of production for testing new features.
 
 Deployed on AWS with auto-scaling groups, RDS for databases, S3 for storage.
 
-Motivation::
+//Motivation::
 
-_<explanation in text form>_
+//_<explanation in text form>_
 
-Quality and/or Performance Features::
+//Quality and/or Performance Features::
 
-_<explanation in text form>_
+//_<explanation in text form>_
 
-Mapping of Building Blocks to Infrastructure::
-_<description of the mapping>_
+//Mapping of Building Blocks to Infrastructure::
+//_<description of the mapping>_
