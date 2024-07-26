@@ -1,30 +1,25 @@
-supportStaff = person "Customer Service Staff" "Customer service staff within the bank." "Bank Staff"
-customer = person "Personal Banking Customer" "A customer of the bank, with personal bank accounts." "Customer"
-customer -> supportStaff "Asks questions to" "Telephone"
+supportStaff = person "IT Departement" "School Staff"
+customer = person "Finance department" "Finance department of the School." "Customer"
+customer -> supportStaff "Asks questions to"
 
-group "Big Bank plc" {
+group "School Accounting System" {
     mainframe = softwaresystem "Mainframe Banking System" "Stores all of the core banking information about customers, accounts, transactions, etc." "Existing"
     supportStaff -> mainframe "Uses"
 
     email = softwaresystem "E-mail System" "The internal Microsoft Exchange e-mail system." "Existing"
     email -> customer "Sends e-mails to"
 
-    atm = softwaresystem "ATM" "Allows customers to withdraw cash." "Existing"
+    atm = softwaresystem "R" "Allows customers to withdraw cash." "Existing"
     atm -> mainframe "Uses"
     customer -> atm "Withdraws cash using"
 
-<<<<<<< Updated upstream
-    internetBankingSystem = softwaresystem "Internet Banking System" "Allows customers to view information about their bank accounts, and make payments." {
-        !include internet-banking-system/ibs.dsl
-=======
-    internetBankingSystem = softwaresystem "School Accounting DB" "Contains all information about finaces" {
+    internetBankingSystem = softwaresystem "School Accounting DB" "Contains all information about finances" {
         !include show-me-the-money/ibs.dsl
->>>>>>> Stashed changes
     }
     internetBankingSystem -> mainframe "Gets account information from, and makes payments using"   
-    customer -> internetBankingSystem "Views account balances and makes payments using"
+    customer -> internetBankingSystem "Views and updates DB"
 }
 
 
-backoffice = person "Back Office Staff" "Administration and support staff within the bank." "Bank Staff"
-backoffice -> mainframe "Uses"
+backoffice = person "Students" "Students within the School" "Bank Staff"
+backoffice -> mainframe "Uses to get invoices"

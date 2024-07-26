@@ -50,16 +50,7 @@ component internetBankingSystem.api "Components" {
 #    title "[Code] Mainframe Banking System Facade"
 #}
 
-dynamic internetBankingSystem.api "SignIn" "Summarises how the sign in feature works in the single-page application." {
-    internetBankingSystem.spa -> internetBankingSystem.api.signinController "Submits credentials to"
-    internetBankingSystem.api.signinController -> internetBankingSystem.api.securityComponent "Validates credentials using"
-    internetBankingSystem.api.securityComponent -> internetBankingSystem.database "select * from users where username = ?"
-    internetBankingSystem.database -> internetBankingSystem.api.securityComponent "Returns user data to"
-    internetBankingSystem.api.securityComponent -> internetBankingSystem.api.signinController "Returns true if the hashed password matches"
-    internetBankingSystem.api.signinController -> internetBankingSystem.spa "Sends back an authentication token to"
-    autoLayout
-    description "Summarises how the sign in feature works in the single-page application."
-}
+
 
 deployment internetBankingSystem "Development" "DevelopmentDeployment" {
     include *
