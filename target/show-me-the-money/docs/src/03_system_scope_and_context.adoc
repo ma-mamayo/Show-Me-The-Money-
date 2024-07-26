@@ -17,8 +17,8 @@ The system is an accounting platform for the college, aimed at improving financi
 [options="header",cols="1,2"]
 |===
 |Name|Context
-| _Decision-maker/College President_ | _Ensures cost-effective implementation without a web app._
-| _Primary Users/Finance Departement_ | _Requires accurate and reliable financial management._
+| _College President_ | _Ensures cost-effective implementation without a web app._
+| _Finance Departement_ | _Requires accurate and reliable financial management._
 | _IT Departement_ | _Focuses on low maintenance and operational costs, secure and stable system._
 | _External Auditors_ | _Needs comprehensive and tamper-proof audit trails._
 | _Other Faculty and Staff Members_ | _Requires an intuitive and easy-to-use interface._

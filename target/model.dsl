@@ -13,7 +13,7 @@ group "School Accounting System" {
     atm -> mainframe "Uses"
     customer -> atm "Withdraws cash using"
 
-    internetBankingSystem = softwaresystem "School Acounting DB" "Contains all information about finaces" {
+    internetBankingSystem = softwaresystem "School Accounting DB" "Contains all information about finances" {
         !include show-me-the-money/ibs.dsl
     }
     internetBankingSystem -> mainframe "Gets account information from, and makes payments using"   
